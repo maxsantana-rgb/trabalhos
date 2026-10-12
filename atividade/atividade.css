@@ -1,0 +1,114 @@
+
+/* Configurações gerais da página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+
+    /* Centraliza o conteúdo na tela */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Cartão principal do parquímetro */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Texto abaixo do título */
+.subtitulo {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Rótulo do campo */
+label {
+    font-weight: bold;
+}
+
+/* Campo de valor */
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Destaque quando o campo está selecionado */
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Botão de pagamento */
+button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Área onde aparece o resultado */
+#mensagem {
+    min-height: 24px;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Mensagem de resultado válido */
+#mensagem.sucesso {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Mensagem de erro */
+#mensagem.erro {
+    background-color: #fee2e2;
+    color: #991b1b;
+}

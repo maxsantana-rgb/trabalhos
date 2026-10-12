@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parquímetro</title>
+
+    <!-- Conecta o arquivo CSS ao HTML -->
+    <link rel="stylesheet" href="atividade.css">
+</head>
+<body>
+
+    <!-- Cartão que agrupa os elementos do parquímetro -->
+    <div class="container">
+
+        <h1>Parquímetro</h1>
+
+        <p class="subtitulo">
+            Informe o valor pago e clique em Pagar
+        </p>
+
+        <form>
+            <label for="valor">Valor em reais (R$):</label>
+
+            <input
+                type="number"
+                id="valor"
+                name="valor"
+                step="0.01"
+                min="0"
+                placeholder="Ex.: 2.50"
+                required
+            >
+
+            <!-- button evita o envio e o recarregamento do formulário -->
+            <button type="button" id="pagar">Pagar</button>
+        </form>
+
+        <!-- O JavaScript vai colocar o resultado aqui -->
+        <p id="mensagem" aria-live="polite"></p>
+
+    </div>
+
+    <!-- Carrega o JavaScript depois dos elementos HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
